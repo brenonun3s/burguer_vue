@@ -1,7 +1,11 @@
 <template>
-  <Navbar :logo="logo_src" :alt="app_name" />
-  <router-view />
-  <Footer />
+  <div id="app">
+    <Navbar :logo="logo_src" :alt="app_name" />
+    <main class="content">
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
 <script>
 import Navbar from "./components/Navbar.vue";
@@ -39,5 +43,21 @@ h1 {
   font-size: 42px;
   margin-bottom: 30px;
   color: #222;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content > * {
+  flex: 1;
 }
 </style>
