@@ -9,15 +9,12 @@
 #main-banner {
   position: relative;
   width: 100%;
-  height: 500px;
-  overflow: hidden;
 }
 
 #main-banner img {
-  max-width: 100%; /* ocupa no máximo 80% da largura */
-  max-height: 100%;
-  object-fit: contain; /* mostra inteira sem cortar */
-  background-color: #000; /* fundo se sobrar espaço */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 #main-banner h1 {
