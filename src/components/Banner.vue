@@ -1,30 +1,30 @@
 <template>
   <div id="main-banner">
-    <h1>Make Your Burguer</h1>
+    <img src="@/assets/burger.jpg" alt="Banner" />
+    <h1>Make Your Burger</h1>
   </div>
 </template>
 
-<script>
-export default {
-  name: "Banner",
-};
-</script>
-
 <style scoped>
 #main-banner {
-  background-image: url("@/assets/burger.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  width: 100%;
   height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  overflow: hidden;
+}
+
+#main-banner img {
+  max-width: 100%; /* ocupa no máximo 80% da largura */
+  max-height: 100%;
+  object-fit: contain; /* mostra inteira sem cortar */
+  background-color: #000; /* fundo se sobrar espaço */
 }
 
 #main-banner h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   color: #fff;
-  text-align: center;
   font-size: 60px;
   background-color: #222;
   padding: 20px 40px;

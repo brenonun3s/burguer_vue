@@ -1,6 +1,5 @@
 <template>
   <Banner />
-  <p>banner</p>
   <div class="main-container">
     <h1>Monte o seu burguer:</h1>
     <BurguerForm />

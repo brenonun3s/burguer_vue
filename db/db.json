@@ -79,13 +79,13 @@
   ],
   "burgers": [
     {
-      "id": "4dfb",
-      "nome": "Brenao",
+      "id": "06e5",
+      "nome": "Maria",
       "carne": "Maminha",
       "pao": "Italiano Branco",
       "opcionais": [
         "Bacon",
-        "Salame"
+        "Tomate"
       ],
       "status": "Solicitado"
     }
